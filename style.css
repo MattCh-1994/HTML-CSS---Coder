@@ -1,7 +1,26 @@
-*{
-    margin: 0px;
-    padding: 0px;
+.container{
+    background-color: #0e2130;
 }
-header{
-    background-color: aqua;
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.row div{
+    width: 250px;
+    display: flex;
+    justify-content: center;
+}
+.row form{
+    width: 350px;
+    display: flex;
+    justify-content: center;
+}
+.row div p{
+    color: #ff9a00;
+    text-shadow: 0 0 4px #ec0000;
+    font-weight: bold;
+}
+.logo{
+    width: 100%;
 }
