@@ -20,35 +20,42 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div>
-            <header class="container">
-                <div class="row">
-                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                        <img class="logo" src="./img/logos/logo-transparente.png" alt="logo">
-                    </div>
-                    <form class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                        <input class="barra" type="text" placeholder="buscar">
-                        <input class="boton" type="submit" value="buscar">
-                    </form>
-                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                        <p>INICIAR SESIÓN</p>                    
-                    </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                        <img src="./img/logos/carrito50.png" alt="">                    
-                    </div>
+        <header class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <img class="logo" src="./img/logos/logo-transparente.png" alt="logo">
                 </div>
-                <nav class="navegador">
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="./pages/videojuegos.html">Videojuegos</a></li>
-                        <li><a href="./pages/componentes.html">Componentes</a></li>
-                        <li><a href="./pages/notebooks.html">Notebooks</a></li>
-                        <li><a href="./pages/perifericos.html">Periféricos</a></li>
-                    </ul>
+                <form class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <input class="barra" type="text" placeholder="buscar">
+                    <input class="boton" type="submit" value="buscar">
+                </form>
+                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <p>INICIAR SESIÓN</p>                    
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <img src="./img/logos/carrito50.png" alt="">                    
+                </div>
+            </div>
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-md">
+                    <div>
+                        <button type="button" class="navbar-toggler ms-2" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion" aria-expanded="true">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div id="MenuNavegacion" class="collapse navbar-collapse">
+                        <ul class="navbar-nav ms-3">
+                            <li class="nav-item"><a class="nav-link" href="index.html">INICIO</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./pages/videojuegos.html">VIDEOJUEGOS</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./pages/componentes.html">COMPONENTES</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./pages/notebooks.html">NOTEBOOKS</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./pages/perifericos.html">PERIFÉRICOS</a></li>
+                        </ul>
+                    </div>
                 </nav>
-                <div class="envios-gratis">ENVIOS GRATIS A TODO EL PAÍS</div>
-            </header>
-        </div>
+            </div>
+            <div class="envios-gratis">ENVIOS GRATIS A TODO EL PAÍS</div>
+        </header>
         <!-- BOOTSTRAP - JAVASCRIPT -->
         <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 

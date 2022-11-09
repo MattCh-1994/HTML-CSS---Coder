@@ -1,26 +1,65 @@
-.container{
+/* GENERAL CSS */
+
+.container-fluid{
     background-color: #0e2130;
 }
 .row{
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-between;
 }
 .row div{
-    width: 250px;
     display: flex;
-    justify-content: center;
-}
-.row form{
-    width: 350px;
-    display: flex;
+    align-items: center;
     justify-content: center;
 }
 .row div p{
+    text-align: center;
     color: #ff9a00;
     text-shadow: 0 0 4px #ec0000;
     font-weight: bold;
+    margin: 0px;
+}
+.row form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.barra{
+    width: fit-content;
+    border-radius: 20px;
+    padding-left: 10px;
+    border-color: #ec0000;
+    background-color: #ff9a00;
+    color: #0e2130;
+}
+nav{
+    background-color: #ff9a00;
+    border-radius: 10px;
 }
 .logo{
-    width: 100%;
+    width: 150px;
+    height: 100px;
+}
+nav div ul li a{
+    text-decoration: none;
+    color: #0e2130;
+    text-shadow: 0 0 3px #ec0000;
+    font-weight: bold;
+}
+.envios-gratis{
+    padding: 5px;
+    text-align: center;
+    color: #ff9a00;
+    text-shadow: 0 0 3px #ec0000;
+    background-color: #0e2130; 
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* HEADER MOBILE */
+
+@media (min-width: 576px){
+    .row div{
+        margin-top: 10px;
+    }
 }
