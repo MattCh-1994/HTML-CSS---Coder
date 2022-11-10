@@ -12,7 +12,7 @@
     align-items: center;
     justify-content: center;
 }
-.row div p{
+.container-fluid .row div p{
     text-align: center;
     color: #ff9a00;
     text-shadow: 0 0 4px #ec0000;
@@ -55,11 +55,128 @@ nav div ul li a{
     font-weight: bold;
     font-style: italic;
 }
+main{
+    background-color: #0e2130;
+    padding-bottom: 10px;
+}
+h1{
+    font-size: 25px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    color: #ff9a00;
+    text-shadow: 0 0 4px #ec0000;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.footerContainer{
+    background-color: #ff9a00;
+}
+.container .row{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.container .row h3{
+    text-align: center;
+}
+.footerContainer div ul li{
+    list-style: none;
+}
+.footerContainer div ul{
+    display: flex;
+    align-items: center;
+}
+.footerContainer div ul a{
+    padding: 0px 10px;
+}
+.p-footer{
+    color: #0e2130;
+    font-weight: bold;
+    text-align: center;
+}
 
-/* HEADER MOBILE */
+/* VISTA MOBILE fIRST */
 
 @media (min-width: 576px){
     .row div{
         margin-top: 10px;
+    }
+    .productos-destacados{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: space-evenly;
+        grid-row-gap: 20px;
+    }
+    .productos-destacados article{
+        border: 2px solid #ff9a00;
+    }
+    .div-img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .div-h2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .div-h2 h2{
+        text-align: center;
+        line-height: 20px;
+        letter-spacing: .25px;
+        margin-bottom: 0;
+        height: 55px;
+        color: #ff9a00;
+        text-shadow: 0 0 4px #ec0000;
+        font-weight: bold;
+    }    
+}
+
+/* VISTA TABLET */
+
+@media (min-width: 768px){
+    .row div{
+        margin-top: 10px;
+    }
+    .productos-destacados{
+        display: grid;
+        grid-template-columns: repeat(2, 5fr);
+        justify-content: space-evenly;
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+    }
+    .div-h2 h2{
+        text-align: center;
+        line-height: 20px;
+        letter-spacing: .25px;
+        margin-bottom: 0;
+        height: 55px;
+        color: #ff9a00;
+        text-shadow: 0 0 4px #ec0000;
+        font-weight: bold;
+        font-size: 15px;
+    }
+}
+
+/* VISTA DESKTOP */
+
+@media (min-width: 992px){
+    .productos-destacados{
+        margin: 20px;
+        display: grid;
+        grid-template-columns: repeat(4, 5fr);
+        grid-column-gap: 20px;
+        justify-content: space-evenly;
+    }
+    .div-h2 h2{
+        text-align: center;
+        line-height: 20px;
+        letter-spacing: .25px;
+        margin-bottom: 0;
+        height: 55px;
+        color: #ff9a00;
+        text-shadow: 0 0 4px #ec0000;
+        font-weight: bold;
+        font-size: 15px;
     }
 }
