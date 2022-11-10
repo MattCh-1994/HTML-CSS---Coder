@@ -1,5 +1,6 @@
 /* GENERAL CSS */
 
+/* HEADER */
 .container-fluid{
     background-color: #0e2130;
 }
@@ -55,6 +56,9 @@ nav div ul li a{
     font-weight: bold;
     font-style: italic;
 }
+
+/* MAIN */
+
 main{
     background-color: #0e2130;
     padding-bottom: 10px;
@@ -71,6 +75,15 @@ h1{
 .ps4promo{
     width: 100%;
 }
+.filtro{
+    background-color: #ff9a00;
+}
+.filtro li{
+    list-style: none;
+}
+
+/* FOOTER */
+
 .footerContainer{
     background-color: #ff9a00;
 }
