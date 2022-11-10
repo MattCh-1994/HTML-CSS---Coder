@@ -68,6 +68,9 @@ h1{
     font-weight: bold;
     text-decoration: underline;
 }
+.ps4promo{
+    width: 100%;
+}
 .footerContainer{
     background-color: #ff9a00;
 }
