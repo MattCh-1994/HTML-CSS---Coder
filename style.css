@@ -4,11 +4,11 @@
 .container-fluid{
     background-color: #0e2130;
 }
-.row{
+.container-fluid .row{
     display: flex;
     justify-content: space-between;
 }
-.row div{
+.container-fluid .row div{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -67,6 +67,7 @@ h1{
     font-size: 25px;
     padding-top: 20px;
     margin-bottom: 20px;
+    margin-left: 30px;
     color: #ff9a00;
     text-shadow: 0 0 4px #ec0000;
     font-weight: bold;
@@ -74,6 +75,45 @@ h1{
 }
 .ps4promo{
     width: 100%;
+}
+main h2{
+    font-size: 25px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    color: #ff9a00;
+    text-shadow: 0 0 4px #ec0000;
+    font-weight: bold;
+    text-decoration: underline;
+}
+main .row div .categorias{
+    background-color: #ff9a00;
+}
+main .productos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+main .productos h3{
+    color: #ff9a00;
+    text-shadow: 0 0 4px #ec0000;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+}
+main .productos .game-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .productos .precio{
+    color: #ff9a00;
+    text-shadow: 0 0 4px #ec0000;
+    font-weight: bold;
+}
+.game{
+    width: 240px;
+    height: 350px;
 }
 
 /* FOOTER */
@@ -97,6 +137,7 @@ h1{
 .footerContainer div ul{
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-right: 40px;
 }
 .footerContainer div ul a{
@@ -111,7 +152,7 @@ h1{
 
 /* VISTA MOBILE fIRST */
 
-@media (min-width: 576px){
+@media (min-width: 450px){
     .row div{
         margin-top: 10px;
     }
@@ -139,7 +180,8 @@ h1{
         line-height: 20px;
         letter-spacing: .25px;
         margin-bottom: 0;
-        height: 55px;
+        margin-left: 0px;
+        height: 65px;
         color: #ff9a00;
         text-shadow: 0 0 4px #ec0000;
         font-weight: bold;
@@ -159,16 +201,23 @@ h1{
         grid-row-gap: 20px;
         grid-column-gap: 20px;
     }
-    .div-h2 h2{
+    .div-h2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    article .div-h2 h2{
         text-align: center;
         line-height: 20px;
         letter-spacing: .25px;
         margin-bottom: 0;
-        height: 55px;
+        margin-left: 0px;
+        height: 65px;
         color: #ff9a00;
         text-shadow: 0 0 4px #ec0000;
         font-weight: bold;
         font-size: 15px;
+        text-decoration: none;
     }
 }
 
@@ -182,12 +231,19 @@ h1{
         grid-column-gap: 20px;
         justify-content: space-evenly;
     }
+    .div-h2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .div-h2 h2{
         text-align: center;
         line-height: 20px;
         letter-spacing: .25px;
+        padding-top: 3px;
         margin-bottom: 0;
-        height: 55px;
+        margin-left: 0px;
+        height: 65px;
         color: #ff9a00;
         text-shadow: 0 0 4px #ec0000;
         font-weight: bold;
