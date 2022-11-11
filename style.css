@@ -59,6 +59,9 @@ nav div ul li a{
 
 /* MAIN */
 
+body{
+    background-color: #0e2130;
+}
 main{
     background-color: #0e2130;
     padding-bottom: 10px;
@@ -152,7 +155,7 @@ main .productos .precio{
 
 /* VISTA MOBILE fIRST */
 
-@media (min-width: 450px){
+@media (min-width: 200px){
     .row div{
         margin-top: 10px;
     }
@@ -174,6 +177,7 @@ main .productos .precio{
         display: flex;
         align-items: center;
         justify-content: center;
+        padding-bottom: 40px;
     }
     .div-h2 h2{
         text-align: center;
