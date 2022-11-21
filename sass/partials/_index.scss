@@ -1,0 +1,61 @@
+@use 'variables';
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-color: variables.$backg-color;
+    .row{
+        display: flex;
+        justify-content: space-between;
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .logo{
+                width: 150px;
+                height: 100px;
+            }
+            p{
+                text-align: center;
+                color: variables.$main-color;
+                text-shadow: 0 0 4px variables.$text-shadow;
+                font-weight: bold;
+                margin: 0px;
+            }
+        }
+        form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .barra{
+                width: 100%;
+                border-radius: 20px;
+                padding-left: 10px;
+                border-color: #ec0000;
+                background-color: #ff9a00;
+                color: #0e2130;
+            }
+        }
+    }
+    nav{
+        background-color: #ff9a00;
+        border-radius: 10px;
+        div ul li a{
+            text-decoration: none;
+            color: #0e2130;
+            text-shadow: 0 0 3px #ec0000;
+            font-weight: bold;
+        }
+    }
+    .envios-gratis{
+        padding: 5px;
+        text-align: center;
+        color: variables.$main-color;
+        text-shadow: 0 0 3px variables.$text-shadow;
+        font-weight: bold;
+        font-style: italic;
+    }
+}
