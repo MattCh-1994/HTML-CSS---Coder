@@ -191,4 +191,37 @@ main h1 {
   text-align: center;
 }
 
+main div .ps4promo {
+  width: 100%;
+}
+main .row div .categorias {
+  background-color: #ff9a00;
+}
+main section .container-xl div article .productos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+main .productos .game-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .productos .game-img .game {
+  width: 200px;
+  height: 300px;
+}
+main .productos .precio {
+  color: #ff9a00;
+  text-shadow: 0 0 4px #ec0000;
+  font-weight: bold;
+}
+main .productos h3 {
+  color: #ff9a00;
+  text-shadow: 0 0 4px #ec0000;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+}
+
 /*# sourceMappingURL=estilos.css.map */
