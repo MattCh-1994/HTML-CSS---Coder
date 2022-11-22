@@ -59,6 +59,7 @@ header{
         font-style: italic;
     }
 }
+
 main{
     background-color: variables.$backg-color;
     padding-bottom: 10px;
@@ -133,6 +134,7 @@ main{
             }
         }
     }
+    /* VISTA DESKTOP */
     @media screen and (min-width: 992px){
         .productos-destacados{
             margin: 20px;
@@ -159,5 +161,37 @@ main{
                 }
             }
         }
+    }
+}
+
+.footerContainer{
+    background-color: #ff9a00;
+    div .container .row{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        h3{
+            text-align: center;
+        }
+    }
+    div .container .row div ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 40px;
+        li{
+            list-style: none;
+            padding-left: 10px;
+            padding-right: 10px;
+            a{
+                padding: 0px 1git0px;
+                text-decoration: none;
+            }
+        }
+    }
+    .container .row div .p-footer{
+        color: #0e2130;
+        font-weight: bold;
+        text-align: center;
     }
 }
