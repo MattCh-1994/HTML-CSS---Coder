@@ -202,6 +202,9 @@ main section .container-xl div article .productos {
   align-items: center;
   flex-direction: column;
 }
+main .container-xl div article {
+  margin-top: 20px;
+}
 main .productos .game-img {
   display: flex;
   align-items: center;

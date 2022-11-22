@@ -1,3 +1,5 @@
+@use 'variables';
+
 main{
     div .ps4promo{
         width: 100%;
@@ -10,6 +12,9 @@ main{
         align-items: center;
         flex-direction: column;
     }
+    .container-xl div article{
+        margin-top: 20px;
+    }
     .productos .game-img{
         display: flex;
         align-items: center;
@@ -20,13 +25,13 @@ main{
         }
     }
     .productos .precio{
-        color: #ff9a00;
-        text-shadow: 0 0 4px #ec0000;
+        color: variables.$main-color;
+        text-shadow: 0 0 4px variables.$text-shadow;
         font-weight: bold;
     }
     .productos h3{
-        color: #ff9a00;
-        text-shadow: 0 0 4px #ec0000;
+        color: variables.$main-color;
+        text-shadow: 0 0 4px variables.$text-shadow;
         font-weight: bold;
         font-size: 15px;
         text-align: center;
