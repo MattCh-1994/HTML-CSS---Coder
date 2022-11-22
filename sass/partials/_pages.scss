@@ -1,5 +1,6 @@
 @use 'variables';
 
+//VIDEOJUEGOS//
 main{
     div .ps4promo{
         width: 100%;
@@ -45,5 +46,14 @@ main{
         font-weight: bold;
         font-size: 15px;
         text-align: center;
+    }
+}
+
+//PERIFERICOS//
+
+main{
+    .product{
+        width: variables.$product-width;
+        height: variables.$product-height;
     }
 }

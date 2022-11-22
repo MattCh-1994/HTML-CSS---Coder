@@ -237,4 +237,9 @@ main .productos h3 {
   text-align: center;
 }
 
+main .product {
+  width: 250px;
+  height: 250px;
+}
+
 /*# sourceMappingURL=estilos.css.map */
