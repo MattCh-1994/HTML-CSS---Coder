@@ -152,7 +152,7 @@ main .productos .precio{
 
 /* VISTA MOBILE fIRST */
 
-@media (min-width: 450px){
+@media (min-width: 430px){
     .row div{
         margin-top: 10px;
     }

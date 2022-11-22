@@ -59,3 +59,105 @@ header{
         font-style: italic;
     }
 }
+main{
+    background-color: variables.$backg-color;
+    padding-bottom: 10px;
+    h1{
+        font-size: 25px;
+        padding-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 30px;
+        color: variables.$main-color;
+        text-shadow: 0 0 4px variables.$text-shadow;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    /* MOBILE FIRST */
+    @media screen and (min-width: 430px){
+        .productos-destacados{
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-content: space-evenly;
+            grid-row-gap: 20px;
+            article{
+                border: 2px solid #ff9a00;
+                .div-img{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .div-h2{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    h2{
+                        text-align: center;
+                        line-height: 20px;
+                        letter-spacing: .25px;
+                        margin-bottom: 0;
+                        margin-left: 0px;
+                        height: 65px;
+                        color: variables.$main-color;
+                        text-shadow: 0 0 4px variables.$text-shadow;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+    /* VISTA TABLET */
+    @media screen and (min-width: 768px){
+        .productos-destacados{
+            display: grid;
+            grid-template-columns: repeat(2, 5fr);
+            justify-content: space-evenly;
+            grid-row-gap: 20px;
+            grid-column-gap: 20px;
+            article .div-h2{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                h2{
+                    text-align: center;
+                    line-height: 20px;
+                    letter-spacing: .25px;
+                    margin-bottom: 0;
+                    margin-left: 0px;
+                    height: 65px;
+                    color: variables.$main-color;
+                    text-shadow: 0 0 4px variables.$text-shadow;
+                    font-weight: bold;
+                    font-size: 15px;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    @media screen and (min-width: 992px){
+        .productos-destacados{
+            margin: 20px;
+            display: grid;
+            grid-template-columns: repeat(4, 5fr);
+            grid-column-gap: 20px;
+            justify-content: space-evenly;
+            article .div-h2{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                h2{
+                    text-align: center;
+                    line-height: 20px;
+                    letter-spacing: .25px;
+                    padding-top: 3px;
+                    margin-bottom: 0;
+                    margin-left: 0px;
+                    height: 65px;
+                    color: variables.$main-color;
+                    text-shadow: 0 0 4px variables.$text-shadow;
+                    font-weight: bold;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
