@@ -194,6 +194,16 @@ main h1 {
 main div .ps4promo {
   width: 100%;
 }
+main h2 {
+  font-size: 25px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  color: #ff9a00;
+  text-shadow: 0 0 4px #ec0000;
+  font-weight: bold;
+  text-decoration: underline;
+}
 main .row div .categorias {
   background-color: #ff9a00;
 }
