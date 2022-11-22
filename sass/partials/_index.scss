@@ -73,7 +73,7 @@ main{
         font-weight: bold;
         text-decoration: underline;
     }
-    /* MOBILE FIRST */
+    // MOBILE FIRST //
     @media screen and (min-width: 430px){
         .productos-destacados{
             display: grid;
@@ -106,7 +106,7 @@ main{
             }
         }
     }
-    /* VISTA TABLET */
+    // VISTA TABLET //
     @media screen and (min-width: 768px){
         .productos-destacados{
             display: grid;
@@ -134,7 +134,7 @@ main{
             }
         }
     }
-    /* VISTA DESKTOP */
+    // VISTA DESKTOP //
     @media screen and (min-width: 992px){
         .productos-destacados{
             margin: 20px;

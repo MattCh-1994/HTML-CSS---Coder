@@ -1,4 +1,3 @@
-/* COLORS */
 * {
   margin: 0px;
   padding: 0px;
@@ -62,9 +61,6 @@ header .envios-gratis {
 main {
   background-color: #0e2130;
   padding-bottom: 10px;
-  /* MOBILE FIRST */
-  /* VISTA TABLET */
-  /* VISTA DESKTOP */
 }
 main h1 {
   font-size: 25px;
