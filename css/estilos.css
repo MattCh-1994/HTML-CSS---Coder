@@ -72,7 +72,7 @@ main h1 {
   font-weight: bold;
   text-decoration: underline;
 }
-@media screen and (min-width: 430px) {
+@media screen and (min-width: 250px) {
   main .productos-destacados {
     display: grid;
     grid-template-columns: 1fr;

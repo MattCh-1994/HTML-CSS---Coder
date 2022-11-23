@@ -74,7 +74,7 @@ main{
         text-decoration: underline;
     }
     // MOBILE FIRST //
-    @media screen and (min-width: 430px){
+    @media screen and (min-width: 250px){
         .productos-destacados{
             display: grid;
             grid-template-columns: 1fr;
