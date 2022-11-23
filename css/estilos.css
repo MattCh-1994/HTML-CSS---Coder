@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  overflow-x: hidden;
 }
 
 header {
@@ -189,6 +190,10 @@ main h1 {
   color: #0e2130;
   font-weight: bold;
   text-align: center;
+}
+
+* {
+  overflow-x: hidden;
 }
 
 main div .ps4promo {

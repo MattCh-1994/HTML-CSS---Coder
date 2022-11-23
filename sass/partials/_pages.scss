@@ -1,5 +1,9 @@
 @use 'variables';
 
+*{
+    overflow-x: hidden;
+}
+
 //VIDEOJUEGOS//
 main{
     div .ps4promo{
