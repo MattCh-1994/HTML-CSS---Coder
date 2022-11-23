@@ -5,137 +5,199 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/logos/logo 32x32 px.jpeg" type="image/x-icon">
-    <title>Merchandising - Gamer Lab</title>
+    <title>Componentes - Gamer Lab</title>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- GOOGLE FONTS ENDING -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- BOOTSTRAP -->
+    <!-- CSS only -->  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- CSS MAIN -->
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
     <header>
-        <div class="headercontainer__logo" >
-            <img src="../img/logos/logo-transparente.png" alt="logo">
+        <div class="row">
+            <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                <img class="logo" src="../img/logos/logo-transparente.png" alt="logo">
+            </div>
+            <form class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <input class="barra" type="text" placeholder="buscar">
+                <input class="boton" type="submit" value="buscar">
+            </form>
+            <div class="col-sm-12 col-md-2 col-lg-2 col-xl-2">
+                <p>INICIAR SESIÓN</p>                    
+            </div>
+            <div class="col-sm-12 col-md-1 col-lg-1 col-xl-1">
+                <img src="../img/logos/carrito50.png" alt="">                    
+            </div>
         </div>
-        <form class="headercontainer__barra">
-            <input class="headercontainer__barra__busqueda" type="text" placeholder="buscar">
-            <input type="submit" value="buscar">   
-        </form>
-        <div class="headercontainer__iniciar-sesion">INICIAR SESIÓN</div>
-        <div class="headercontainer__carrito">
-            <img src="../img/logos/carrito50.png" alt="">
-        </div>            
-        <nav class="nav">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./videojuegos.html">Videojuegos</a></li>
-                <li><a href="./componentes.html">Componentes</a></li>
-                <li><a href="./notebooks.html">Notebooks</a></li>
-                <li><a href="./perifericos.html">Periféricos</a></li>
-            </ul>
-        </nav>
-        <div class="headercontainer__envios_gratis">ENVIOS GRATIS A TODO EL PAÍS</div>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-md">
+                <div>
+                    <button type="button" class="navbar-toggler ms-2" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion" aria-expanded="true">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div id="MenuNavegacion" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-3">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">INICIO</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./videojuegos.html">VIDEOJUEGOS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./componentes.html">COMPONENTES</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./notebooks.html">NOTEBOOKS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./perifericos.html">PERIFÉRICOS</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="envios-gratis">ENVIOS GRATIS A TODO EL PAÍS</div>
     </header>
-    <div>
-        <img src="../img/graphics/promo.jpg" alt="promo">
-    </div>
-    <h1>Componentes</h1>
     <main>
-        <h2>Categoría</h2>
-        <section> 
-            <article>
-                <h3>Procesador</h3> 
-                <div>
-                    <ul>
-                        <li>Procesadores AMD</li>
-                        <li>Procesadores Intel</li>
-                    </ul>
-                </div>
-            </article>
-            <article>
-                <h3>Motherboards</h3>
-                <div>
-                    <ul>
-                        <li>Mother AMD</li>
-                        <li>Mother Intel</li>
-                    </ul>
-                </div>
-                </article>
-            <article>
-                <h3>Tarjetas Gráficas</h3>
-                <div>
-                    <ul>
-                        <li>Placas de video GeForce</li>
-                        <li>Placas de video Radeon AMD</li>
-                    </ul>
-                </div>
-            </article>
-            <article>
-                <h3>Almacenamiento</h3>
-                <div>
-                    <ul>
-                        <li>Disco rígidos externos</li>
-                        <li>Disco rígidos internos</li>
-                        <li>Disco sólidos SSD</li>
-                    </ul>
-                </div>
-            </article>
-        </section>
-        <section>
-            <article>
-                <h3>Mother ASUS PRIME A520M-K AM4</h3>
-                <div>
-                    <img src="../img/componentes/01.jpg" alt="">
-                </div>
-                <div>17350,00</div>
-            </article>
-            <article>
-                <h3>Procesador AMD RYZEN 5 3600 4.2GHz Turbo AM4 Wraith Stealth Cooler</h3>
-                <div>
-                    <img src="../img/componentes/02.jpg" alt="">
-                </div>
-                <div>33350,00</div>
-            </article>
-            <article>
-                <h3>Placa de Video ASUS GeForce RTX 3070 Ti 8GB GDDR6 ROG STRIX GAMING OC</h3>
-                <div>
-                    <img src="../img/componentes/03.jpg" alt="">
-                </div>
-                <div>195000,00</div>
-            </article>
-            <article>
-                <h3>Placa de Video Asrock Radeon RX 6800 XT 16GB GDDR6 Phantom Gaming D OC</h3>
-                <div>
-                    <img src="../img/componentes/04.jpg" alt="">
-                </div>
-                <div>165000,00</div>
-            </article>
-            <article>
-                <h3>Memoria GeiL DDR4 16GB (2x8GB) 3600MHz EVO X II RGB</h3>
-                <div>
-                    <img src="../img/componentes/05.jpg" alt="">
-                </div>
-                <div>21350,00</div>
-            </article>
-            <article>
-                <h3>Fuente ASUS ROG STRIX 650W 80 Plus Gold Full Modular 650G</h3>
-                <div>
-                    <img src="../img/componentes/06.jpg" alt="">
-                </div>
-                <div>29810,00</div>
-            </article>
-        </section>
+        <div>
+            <img class="ps4promo" src="../img/graphics/promo.jpg" alt="promo">
+        </div>
+        <h1>Componentes</h1>
+        <div class="row">
+            <div class="col-sm-12 col-md-2 col-lg-2 col-xl-2">
+                <section class="categorias"> 
+                    <article>
+                        <h2>Procesador</h2> 
+                        <div>
+                            <ul>
+                                <li>Procesadores AMD</li>
+                                <li>Procesadores Intel</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article>
+                        <h2>Motherboards</h2>
+                        <div>
+                            <ul>
+                                <li>Mother AMD</li>
+                                <li>Mother Intel</li>
+                            </ul>
+                        </div>
+                        </article>
+                    <article>
+                        <h2>Tarjetas Gráficas</h2>
+                        <div>
+                            <ul>
+                                <li>Placas de video GeForce</li>
+                                <li>Placas de video Radeon AMD</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article>
+                        <h2>Almacenamiento</h2>
+                        <div>
+                            <ul>
+                                <li>Disco rígidos externos</li>
+                                <li>Disco rígidos internos</li>
+                                <li>Disco sólidos SSD</li>
+                            </ul>
+                        </div>
+                    </article>
+                </section>
+            </div>
+            <div class="col-sm-12 col-md-10 col-lg-10 col-xl-10">
+                <section>
+                    <div class="container-xl">
+                        <div class="row justify-content-between">
+                            <article class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                                <div class="productos">
+                                    <h3>Mother ASUS PRIME A520M-K AM4</h3>
+                                    <div>
+                                        <img class="product" src="../img/componentes/01.jpg" alt="">
+                                    </div>
+                                    <div class="precio">17350,00</div>
+                                </div>
+                            </article>
+                            <article class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                                <div class="productos">
+                                    <h3>Procesador AMD RYZEN 5 3600 4.2GHz Turbo AM4 Wraith Stealth Cooler</h3>
+                                    <div>
+                                        <img class="product" src="../img/componentes/02.jpg" alt="">
+                                    </div>
+                                    <div class="precio">33350,00</div>
+                                </div>
+                            </article>
+                            <article class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                                <div class="productos">
+                                    <h3>Placa de Video ASUS GeForce RTX 3070 Ti 8GB GDDR6 ROG STRIX GAMING OC</h3>
+                                    <div>
+                                        <img class="product" src="../img/componentes/03.jpg" alt="">
+                                    </div>
+                                    <div class="precio">195000,00</div>
+                                </div>
+                            </article>
+                            <article class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                                <div class="productos">
+                                    <h3>Placa de Video Asrock Radeon RX 6800 XT 16GB GDDR6 Phantom Gaming D OC</h3>
+                                    <div>
+                                        <img class="product" src="../img/componentes/04.jpg" alt="">
+                                    </div>
+                                    <div class="precio">165000,00</div>
+                                </div>
+                            </article>
+                            <article class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                                <div class="productos">
+                                    <h3>Memoria GeiL DDR4 16GB (2x8GB) 3600MHz EVO X II RGB</h3>
+                                    <div>
+                                        <img class="product"  src="../img/componentes/05.jpg" alt="">
+                                    </div>
+                                    <div class="precio">21350,00</div>
+                                </div>
+                            </article>
+                            <article class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                                <div class="productos">
+                                    <h3>Fuente ASUS ROG STRIX 650W 80 Plus Gold Full Modular 650G</h3>
+                                    <div>
+                                        <img class="product" src="../img/componentes/06.jpg" alt="">
+                                    </div>
+                                    <div class="precio">29810,00</div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>    
+                </section>
+            </div>
+        </div>
     </main>
-    <footer class="footercontainer">
-            <h3 class="footercontainer__seguinos">Seguinos en</h3>
-            <h3 class="footercontainer__ayuda">Ayuda</h3>
-            <h3 class="footercontainer__trabaja-con-nosotros">Trabajá con nosotros</h3>
-            <div class="footercontainer__buttoms">
-                <ul>
-                    <li><a href="#" class="fa fa-facebook"></a></li>
-                    <li><a href="#" class="fa fa-twitter"></a></li>
-                    <li><a href="#" class="fa fa-youtube"></a></li>
-                    <li><a href="#" class="fa fa-instagram"></a></li>
-                </ul>
+    <footer class="footerContainer">
+        <div>
+            <div class="container">
+                <div class="row">
+                    <h3 class="col-sm-4 col-md-4 col-lg-4 col-xl-4">Seguinos en</h3>
+                    <h3 class="col-sm-4 col-md-4 col-lg-4 col-xl-4">Trabajá con nosotros</h3>
+                    <h3 class="col-sm-4 col-md-4 col-lg-4 col-xl-4">Ayuda</h3>
+                </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                        <ul>
+                            <li><a href="#" class="fa fa-facebook"></a></li>
+                            <li><a href="#" class="fa fa-twitter"></a></li>
+                            <li><a href="#" class="fa fa-youtube"></a></li>
+                            <li><a href="#" class="fa fa-instagram"></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                        <p class="p-footer">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                        <p class="p-footer">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
             </div>
-            <div class="copyright">
-                <p class="parrafo">Las marcas y logos de gamerlab.com gamerlab.com/reviews son propiedad de...</p>
-            </div>
+        </div>            
     </footer>
+<!-- BOOTSTRAP - JAVASCRIPT -->
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>    
 </body>
 </html>
