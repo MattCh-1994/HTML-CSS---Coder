@@ -19,14 +19,19 @@ main{
         font-weight: bold;
         text-decoration: underline;
     }
-    .categorias .filterbar h2{
-        font-size: 25px;
-        padding-top: 20px;
-        margin-bottom: 20px;
-        margin-left: 30px;
-        color: variables.$main-color;
-        text-shadow: 0 0 4px variables.$text-shadow;
-        
+    .categorias{
+        background-color: #ff9a00;
+        margin-left: 15px;
+        margin-right: 15px;
+        border-radius: 10px;
+        article h2{
+            padding-left: 10px;
+            font-size: 20px;
+            text-decoration: none;
+            color: #0e2130;
+            text-shadow: 0 0 3px #ec0000;
+            font-weight: bold;
+        }
     }
     section .container-xl div article .productos{
         display: flex;
