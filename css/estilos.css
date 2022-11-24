@@ -219,8 +219,13 @@ main h1 {
   font-weight: bold;
   text-decoration: underline;
 }
-main .row div .categorias {
-  background-color: #ff9a00;
+main .categorias .filterbar h2 {
+  font-size: 25px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  color: #ff9a00;
+  text-shadow: 0 0 4px #ec0000;
 }
 main section .container-xl div article .productos {
   display: flex;
