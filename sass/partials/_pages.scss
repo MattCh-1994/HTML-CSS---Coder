@@ -35,6 +35,11 @@ main{
         align-items: center;
         justify-content: center;
     }
+    .productos .product-img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .productos .precio{
         color: variables.$main-color;
         text-shadow: 0 0 4px variables.$text-shadow;
@@ -48,6 +53,3 @@ main{
         text-align: center;
     }
 }
-
-//PERIFERICOS, COMPONENTES, NOTEBOOKS//
-
