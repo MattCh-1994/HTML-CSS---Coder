@@ -11,7 +11,6 @@
 * {
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden;
 }
 
 header {
@@ -180,6 +179,7 @@ main h1 {
 }
 .footerContainer div .container .row h3 {
   text-align: center;
+  line-height: 1.5;
 }
 .footerContainer div .container .row div ul {
   display: flex;
@@ -221,17 +221,23 @@ main h1 {
 }
 main .categorias {
   background-color: #ff9a00;
+  height: 700px;
   margin-left: 15px;
   margin-right: 15px;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 main .categorias article h2 {
+  margin: 0px;
   padding-left: 10px;
   font-size: 20px;
   text-decoration: none;
   color: #0e2130;
   text-shadow: 0 0 3px #ec0000;
   font-weight: bold;
+  line-height: 1.5;
 }
 main section .container-xl div article .productos {
   display: flex;
@@ -262,6 +268,7 @@ main .productos h3 {
   font-weight: bold;
   font-size: 15px;
   text-align: center;
+  line-height: 1.5;
 }
 
 /*# sourceMappingURL=estilos.css.map */

@@ -3,7 +3,6 @@
 *{
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden;
 }
 
 header{
@@ -173,6 +172,7 @@ main{
         align-items: center;
         h3{
             text-align: center;
+            line-height: 1.5;
         }
     }
     div .container .row div ul{
