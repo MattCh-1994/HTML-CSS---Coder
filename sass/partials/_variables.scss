@@ -4,7 +4,15 @@ $main-color: #ff9a00;
 $text-shadow: #ec0000;
 
 //MIXINS//
-$game-width: 200px;
-$game-height: 300px;
-$product-width: 250px;
-$product-height: 250px;
+
+@mixin size ($ancho, $alto) {
+    width: $ancho;
+    height: $alto;    
+}
+
+.game{
+    @include size (200px, 300px)
+}
+.product{
+    @include size (250px, 250px)
+}

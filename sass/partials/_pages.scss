@@ -34,10 +34,6 @@ main{
         display: flex;
         align-items: center;
         justify-content: center;
-        .game{
-            width: variables.$game-width;
-            height: variables.$game-height;
-        }
     }
     .productos .precio{
         color: variables.$main-color;
@@ -55,9 +51,3 @@ main{
 
 //PERIFERICOS, COMPONENTES, NOTEBOOKS//
 
-main{
-    .product{
-        width: variables.$product-width;
-        height: variables.$product-height;
-    }
-}

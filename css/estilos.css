@@ -1,3 +1,13 @@
+.game {
+  width: 200px;
+  height: 300px;
+}
+
+.product {
+  width: 250px;
+  height: 250px;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -225,10 +235,6 @@ main .productos .game-img {
   align-items: center;
   justify-content: center;
 }
-main .productos .game-img .game {
-  width: 200px;
-  height: 300px;
-}
 main .productos .precio {
   color: #ff9a00;
   text-shadow: 0 0 4px #ec0000;
@@ -240,11 +246,6 @@ main .productos h3 {
   font-weight: bold;
   font-size: 15px;
   text-align: center;
-}
-
-main .product {
-  width: 250px;
-  height: 250px;
 }
 
 /*# sourceMappingURL=estilos.css.map */
