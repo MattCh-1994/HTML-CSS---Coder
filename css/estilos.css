@@ -235,6 +235,11 @@ main .productos .game-img {
   align-items: center;
   justify-content: center;
 }
+main .productos .product-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 main .productos .precio {
   color: #ff9a00;
   text-shadow: 0 0 4px #ec0000;
