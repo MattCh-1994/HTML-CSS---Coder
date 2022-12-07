@@ -172,34 +172,8 @@ main h1 {
 .footerContainer {
   background-color: #ff9a00;
 }
-.footerContainer div .container .row {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.footerContainer div .container .row h3 {
-  text-align: center;
-  line-height: 1.5;
-}
-.footerContainer div .container .row div ul {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 40px;
-}
-.footerContainer div .container .row div ul li {
-  list-style: none;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-.footerContainer div .container .row div ul li a {
-  padding: 0px 1git0px;
-  text-decoration: none;
-}
-.footerContainer .container .row div .p-footer {
-  color: #0e2130;
-  font-weight: bold;
-  text-align: center;
+.footerContainer .container .row .div h3 {
+  font-size: 500px;
 }
 
 * {
