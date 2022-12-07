@@ -172,8 +172,9 @@ main h1 {
 .footerContainer {
   background-color: #ff9a00;
 }
-.footerContainer .container .row .div h3 {
-  font-size: 500px;
+.footerContainer h3 {
+  font-size: 25px;
+  line-height: 1.5;
 }
 
 * {
