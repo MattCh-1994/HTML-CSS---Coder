@@ -78,6 +78,10 @@ main{
         align-items: center;
         justify-content: center;
         margin-top: 10px;
+        img{
+            width: 120px;
+            height: 120px;
+        }
     }
     // MOBILE FIRST //
     @media screen and (min-width: 250px){
@@ -90,14 +94,15 @@ main{
                 display: flex;
                 justify-content: center;
                 .product-container{
-                    width: 350px;
-                    height: 350px;
+                    width: 300px;
+                    height: 300px;
                     margin-bottom: 30px;
                     background-color: variables.$product-backgcolor;
                     border-radius: 10px;
                     cursor: pointer;
                 }
                 .div-h2{
+                    margin-top: 10px;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -143,14 +148,15 @@ main{
                 display: flex;
                 justify-content: center;
                 .product-container{
-                    width: 350px;
-                    height: 350px;
+                    width: 300px;
+                    height: 300px;
                     margin-bottom: 30px;
                     background-color: variables.$product-backgcolor;
                     border-radius: 10px;
                     cursor: pointer;
                 }
                 .div-h2{
+                    margin-top: 10px;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -196,14 +202,18 @@ main{
                 display: flex;
                 justify-content: center;
                 .product-container{
-                    width: 350px;
-                    height: 350px;
+                    width: 300px;
+                    height: 300px;
                     margin-bottom: 30px;
                     background-color: variables.$product-backgcolor;
                     border-radius: 20px;
                     cursor: pointer;
                 }
+                .product-container:hover{
+                    height: 350px;
+                }
                 .div-h2{
+                    margin-top: 10px;
                     display: flex;
                     align-items: center;
                     justify-content: center;

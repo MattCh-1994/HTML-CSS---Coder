@@ -88,6 +88,10 @@ main .div-img {
   justify-content: center;
   margin-top: 10px;
 }
+main .div-img img {
+  width: 120px;
+  height: 120px;
+}
 @media screen and (min-width: 250px) {
   main .productos-destacados {
     display: grid;
@@ -100,14 +104,15 @@ main .div-img {
     justify-content: center;
   }
   main .productos-destacados article .product-container {
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     margin-bottom: 30px;
     background-color: #ff9a00;
     border-radius: 10px;
     cursor: pointer;
   }
   main .productos-destacados article .div-h2 {
+    margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -152,14 +157,15 @@ main .div-img {
     justify-content: center;
   }
   main .productos-destacados article .product-container {
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     margin-bottom: 30px;
     background-color: #ff9a00;
     border-radius: 10px;
     cursor: pointer;
   }
   main .productos-destacados article .div-h2 {
+    margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -204,14 +210,18 @@ main .div-img {
     justify-content: center;
   }
   main .productos-destacados article .product-container {
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     margin-bottom: 30px;
     background-color: #ff9a00;
     border-radius: 20px;
     cursor: pointer;
   }
+  main .productos-destacados article .product-container:hover {
+    height: 350px;
+  }
   main .productos-destacados article .div-h2 {
+    margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
