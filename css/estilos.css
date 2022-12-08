@@ -75,7 +75,7 @@ main {
 main h1 {
   font-size: 25px;
   padding-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   color: #ff9a00;
   text-shadow: 0 0 4px #ec0000;
   font-weight: bold;
@@ -137,12 +137,19 @@ main .div-h2 div p {
     justify-content: center;
   }
   .productos-destacados article .product-container {
+    margin-top: 20px;
     width: 300px;
-    height: 250px;
+    height: 280px;
     margin-bottom: 30px;
     background-color: #ff9a00;
-    border-radius: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 10px 15px black;
+    transition: all 400ms ease;
     cursor: pointer;
+  }
+  .productos-destacados article .product-container:hover {
+    box-shadow: 10px 15px 20px black;
+    transform: translateY(-3%);
   }
 }
 @media screen and (min-width: 768px) {
@@ -158,12 +165,19 @@ main .div-h2 div p {
     justify-content: center;
   }
   .productos-destacados article .product-container {
+    margin-top: 20px;
     width: 300px;
-    height: 250px;
+    height: 280px;
     margin-bottom: 30px;
     background-color: #ff9a00;
-    border-radius: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 10px 15px black;
+    transition: all 400ms ease;
     cursor: pointer;
+  }
+  .productos-destacados article .product-container:hover {
+    box-shadow: 10px 15px 20px black;
+    transform: translateY(-3%);
   }
 }
 @media screen and (min-width: 992px) {
@@ -179,12 +193,19 @@ main .div-h2 div p {
     justify-content: center;
   }
   .productos-destacados article .product-container {
+    margin-top: 20px;
     width: 300px;
     height: 280px;
     margin-bottom: 30px;
     background-color: #ff9a00;
     border-radius: 20px;
+    box-shadow: 5px 10px 15px black;
+    transition: all 400ms ease;
     cursor: pointer;
+  }
+  .productos-destacados article .product-container:hover {
+    box-shadow: 10px 15px 20px black;
+    transform: translateY(-3%);
   }
 }
 .footerContainer {
