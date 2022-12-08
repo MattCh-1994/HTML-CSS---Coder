@@ -103,18 +103,18 @@ main{
             font-weight: bold;
             font-size: 15px;
             }
-        }
-        div{
-            p{
-                width: 120px;
-                height: 30px;
-                text-align: center;
-                border-radius: 10px;
-                margin-top: 20px;
-                font-size: 20px;
-                font-weight: bold;
-                background-color: #0e2130;
-                color: #ff9a00;
+            div{
+                p{
+                    width: 120px;
+                    height: 30px;
+                    text-align: center;
+                    border-radius: 10px;
+                    margin-top: 20px;
+                    font-size: 20px;
+                    font-weight: bold;
+                    background-color: #0e2130;
+                    color: #ff9a00;
+                }
             }
         }
     }
@@ -174,7 +174,7 @@ main{
                 justify-content: center;
                 .product-container{
                     width: 300px;
-                    height: 290px;
+                    height: 280px;
                     margin-bottom: 30px;
                     background-color: variables.$product-backgcolor;
                     border-radius: 20px;

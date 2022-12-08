@@ -113,7 +113,7 @@ main .div-h2 h2 {
   font-weight: bold;
   font-size: 15px;
 }
-main div p {
+main .div-h2 div p {
   width: 120px;
   height: 30px;
   text-align: center;
@@ -180,7 +180,7 @@ main div p {
   }
   .productos-destacados article .product-container {
     width: 300px;
-    height: 290px;
+    height: 280px;
     margin-bottom: 30px;
     background-color: #ff9a00;
     border-radius: 20px;
