@@ -142,22 +142,41 @@ main{
             grid-template-columns: repeat(4, 5fr);
             grid-column-gap: 20px;
             justify-content: space-evenly;
-            article .div-h2{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                h2{
-                    text-align: center;
-                    line-height: 20px;
-                    letter-spacing: .25px;
-                    padding-top: 3px;
-                    margin-bottom: 0;
-                    margin-left: 0px;
-                    height: 65px;
-                    color: variables.$main-color;
-                    text-shadow: 0 0 4px variables.$text-shadow;
-                    font-weight: bold;
-                    font-size: 15px;
+            article{
+                width: 350px;
+                height: 350px;
+                background-color: variables.$product-backgcolor;
+                border-radius: 10px;
+                cursor: pointer;
+                .div-h2{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    h2{
+                        text-align: center;
+                        line-height: 20px;
+                        letter-spacing: .25px;
+                        padding-top: 3px;
+                        margin-bottom: 0;
+                        margin-left: 0px;
+                        height: 65px;
+                        color: variables.$product-textcolor;
+                        text-shadow: 0 0 4px variables.$text-shadow;
+                        font-weight: bold;
+                        font-size: 15px;
+                    }
+                    p{
+                        width: 120px;
+                        height: 50px;
+                        text-align: center;
+                        border-radius: 10px;
+                        margin-top: 20px;
+                        font-size: 25px;
+                        font-weight: bold;
+                        background-color: #0e2130;
+                        color: #ff9a00;
+                    }
                 }
             }
         }

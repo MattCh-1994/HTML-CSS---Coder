@@ -149,10 +149,18 @@ main h1 {
     grid-column-gap: 20px;
     justify-content: space-evenly;
   }
+  main .productos-destacados article {
+    width: 350px;
+    height: 350px;
+    background-color: #ff9a00;
+    border-radius: 10px;
+    cursor: pointer;
+  }
   main .productos-destacados article .div-h2 {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
   }
   main .productos-destacados article .div-h2 h2 {
     text-align: center;
@@ -162,10 +170,21 @@ main h1 {
     margin-bottom: 0;
     margin-left: 0px;
     height: 65px;
-    color: #ff9a00;
+    color: #0e2130;
     text-shadow: 0 0 4px #ec0000;
     font-weight: bold;
     font-size: 15px;
+  }
+  main .productos-destacados article .div-h2 p {
+    width: 120px;
+    height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #0e2130;
+    color: #ff9a00;
   }
 }
 
