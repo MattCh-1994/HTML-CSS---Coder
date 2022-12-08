@@ -81,6 +81,7 @@ main h1 {
   text-shadow: 0 0 4px #ec0000;
   font-weight: bold;
   text-decoration: underline;
+  line-height: 1.5;
 }
 @media screen and (min-width: 250px) {
   main .productos-destacados {
@@ -173,8 +174,36 @@ main h1 {
   background-color: #ff9a00;
 }
 .footerContainer h3 {
+  text-align: center;
   font-size: 25px;
   line-height: 1.5;
+}
+.footerContainer div .botones-redes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footerContainer div .botones-redes a {
+  text-decoration: none;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  margin: 10px 5px;
+  padding: 0px 5px;
+  height: 40px;
+  width: 40px;
+  background-color: #0e2130;
+  box-shadow: 2px 2px 5px black;
+  border-radius: 50%;
+  color: white;
+}
+.footerContainer div p {
+  text-align: center;
+  font-size: 20px;
+  border: 2px solid #0e2130;
+  border-radius: 20px;
+  background-color: #0e2130;
+  color: #ff9a00;
 }
 
 * {
