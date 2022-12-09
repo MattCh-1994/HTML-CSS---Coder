@@ -38,35 +38,50 @@ main{
             line-height: 1.5;
         }
     }
-    section .container-xl div article .productos{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-    .container-xl div article{
+    section div article .product-container{
         margin-top: 20px;
+        width: 300px;
+        height: 280px;
+        margin-bottom: 30px;
+        background-color: variables.$product-backgcolor;
+        border-radius: 20px;
+        box-shadow: 5px 10px 15px black;
+        transition: all 400ms ease;
+        cursor: pointer;
+        .div-h3{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            h3{
+                width: 90%;
+                text-align: center;
+                line-height: 20px;
+                letter-spacing: .25px;
+                padding-top: 20px;
+                margin-bottom: 0;
+                margin-left: 0px;
+                height: 65px;
+                color: variables.$product-textcolor;
+                text-shadow: 0 0 4px variables.$text-shadow;
+                font-weight: bold;
+                font-size: 15px;
+            }
+            .precio{
+                width: 120px;
+                height: 30px;
+                text-align: center;
+                border-radius: 10px;
+                margin-top: 20px;
+                font-size: 20px;
+                font-weight: bold;
+                background-color: #0e2130;
+                color: #ff9a00;
+            }
+        }
     }
-    .productos .game-img{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .productos .product-img{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .productos .precio{
-        color: variables.$main-color;
-        text-shadow: 0 0 4px variables.$text-shadow;
-        font-weight: bold;
-    }
-    .productos h3{
-        color: variables.$main-color;
-        text-shadow: 0 0 4px variables.$text-shadow;
-        font-weight: bold;
-        font-size: 15px;
-        text-align: center;
-        line-height: 1.5;
+    section div article .product-container:hover{
+        box-shadow: 10px 15px 20px black;
+        transform: translateY(-3%);
     }
 }

@@ -4,8 +4,8 @@
 }
 
 .product {
-  width: 250px;
-  height: 250px;
+  width: 120px;
+  height: 120px;
 }
 
 * {
@@ -281,36 +281,51 @@ main .categorias article h2 {
   font-weight: bold;
   line-height: 1.5;
 }
-main section .container-xl div article .productos {
+main section div article .product-container {
+  margin-top: 20px;
+  width: 300px;
+  height: 280px;
+  margin-bottom: 30px;
+  background-color: #ff9a00;
+  border-radius: 20px;
+  box-shadow: 5px 10px 15px black;
+  transition: all 400ms ease;
+  cursor: pointer;
+}
+main section div article .product-container .div-h3 {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
 }
-main .container-xl div article {
-  margin-top: 20px;
-}
-main .productos .game-img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-main .productos .product-img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-main .productos .precio {
-  color: #ff9a00;
-  text-shadow: 0 0 4px #ec0000;
-  font-weight: bold;
-}
-main .productos h3 {
-  color: #ff9a00;
+main section div article .product-container .div-h3 h3 {
+  width: 90%;
+  text-align: center;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  padding-top: 20px;
+  margin-bottom: 0;
+  margin-left: 0px;
+  height: 65px;
+  color: #0e2130;
   text-shadow: 0 0 4px #ec0000;
   font-weight: bold;
   font-size: 15px;
+}
+main section div article .product-container .div-h3 .precio {
+  width: 120px;
+  height: 30px;
   text-align: center;
-  line-height: 1.5;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #0e2130;
+  color: #ff9a00;
+}
+main section div article .product-container:hover {
+  box-shadow: 10px 15px 20px black;
+  transform: translateY(-3%);
 }
 
 /*# sourceMappingURL=estilos.css.map */
