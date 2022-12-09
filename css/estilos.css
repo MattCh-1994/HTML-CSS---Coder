@@ -1,6 +1,6 @@
 .game {
-  width: 200px;
-  height: 300px;
+  width: 120px;
+  height: 150px;
 }
 
 .product {
@@ -87,10 +87,6 @@ main .div-img {
   align-items: center;
   justify-content: center;
   margin-top: 10px;
-}
-main .div-img img {
-  width: 120px;
-  height: 120px;
 }
 main .div-h2 {
   margin-top: 10px;
@@ -281,6 +277,10 @@ main .categorias article h2 {
   font-weight: bold;
   line-height: 1.5;
 }
+main .container-xl div article {
+  display: flex;
+  justify-content: center;
+}
 main section div article .product-container {
   margin-top: 20px;
   width: 300px;
@@ -318,6 +318,34 @@ main section div article .product-container .div-h3 .precio {
   text-align: center;
   border-radius: 10px;
   margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #0e2130;
+  color: #ff9a00;
+}
+main section div article .product-container .div-game-h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+main section div article .product-container .div-game-h3 h3 {
+  padding-top: 20px;
+  width: 90%;
+  text-align: center;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  height: 50px;
+  color: #0e2130;
+  text-shadow: 0 0 4px #ec0000;
+  font-weight: bold;
+  font-size: 15px;
+}
+main section div article .product-container .div-game-h3 .precio {
+  width: 120px;
+  height: 30px;
+  text-align: center;
+  border-radius: 10px;
   font-size: 20px;
   font-weight: bold;
   background-color: #0e2130;

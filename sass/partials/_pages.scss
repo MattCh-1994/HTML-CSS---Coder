@@ -38,6 +38,10 @@ main{
             line-height: 1.5;
         }
     }
+    .container-xl div article{
+        display: flex;
+        justify-content: center;
+    }
     section div article .product-container{
         margin-top: 20px;
         width: 300px;
@@ -73,6 +77,34 @@ main{
                 text-align: center;
                 border-radius: 10px;
                 margin-top: 20px;
+                font-size: 20px;
+                font-weight: bold;
+                background-color: #0e2130;
+                color: #ff9a00;
+            }
+        }
+        .div-game-h3{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+            h3{
+                padding-top: 20px;
+                width: 90%;
+                text-align: center;
+                line-height: 20px;
+                letter-spacing: .25px;
+                height: 50px;
+                color: variables.$product-textcolor;
+                text-shadow: 0 0 4px variables.$text-shadow;
+                font-weight: bold;
+                font-size: 15px;
+            }
+            .precio{
+                width: 120px;
+                height: 30px;
+                text-align: center;
+                border-radius: 10px;
                 font-size: 20px;
                 font-weight: bold;
                 background-color: #0e2130;
