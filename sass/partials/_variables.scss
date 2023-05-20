@@ -3,6 +3,9 @@ $backg-color:#0e2130;
 $main-color: #ff9a00;
 $text-shadow: #ec0000;
 
+$product-textcolor: #0e2130;
+$product-backgcolor: #ff9a00;
+
 //MIXINS//
 
 @mixin size ($ancho, $alto) {
@@ -11,8 +14,8 @@ $text-shadow: #ec0000;
 }
 
 .game{
-    @include size (200px, 300px)
+    @include size (120px, 150px)
 }
 .product{
-    @include size (250px, 250px)
+    @include size (120px, 120px)
 }

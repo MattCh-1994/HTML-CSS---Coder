@@ -14,8 +14,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-        <!-- GOOGLE FONTS ENDING -->
+        <!-- FONT AWESOME -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/d4d707f9d2.js" crossorigin="anonymous"></script>
         <!-- BOOTSTRAP -->
         <!-- CSS only -->  
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" 
@@ -31,7 +32,9 @@
                 </div>
                 <form class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <input class="barra" type="text" placeholder="buscar">
-                    <input class="boton" type="submit" value="buscar">
+                    <div>
+                        <a href="#" class="fa fa-search"></a>
+                    </div>
                 </form>
                 <div class="col-sm-12 col-md-2 col-lg-2 col-xl-2">
                     <p>INICIAR SESIÓN</p>                    
@@ -85,66 +88,84 @@
             <h1 class="title">Últimas novedades</h1>   
             <section class="productos-destacados">
                 <article>
-                    <div class="div-img">
-                        <img src="./img/graphics/mother-asus-200.png" alt="mother">
-                    </div>
-                    <div class="div-h2">
-                        <h2>Mother ASUS PRIME H610M-E D4 S1700</h2>
-                    </div>
-                </article>
-                <article>
-                    <div class="div-img">
-                        <img src="./img/graphics/ram-geil-removebg-preview.png" alt="ram">
-                    </div>
-                    <div class="div-h2">
-                        <h2>Memoria GeiL DDR4 16GB 3000MHz Super Luce RGB Black</h2>
+                    <div class="product-container">
+                        <div class="div-img">
+                            <img class="product" src="./img/graphics/mother-asus-200.png" alt="mother">
+                        </div>
+                        <div class="div-h2">
+                            <h2>Mother ASUS PRIME H610M-E D4 S1700</h2>
+                            <div>
+                                <p>$25.000</p>
+                            </div>
+                        </div>
                     </div>
                 </article>
                 <article>
-                    <div class="div-img">
-                        <img src="./img/graphics/ryzen-5-200-removebg-preview.png" alt="ryzen">
-                    </div>
-                    <div class="div-h2">
-                        <h2>Procesador AMD Ryzen 5 1600 AF Zen</h2>
+                    <div class="product-container">
+                        <div class="div-img">
+                            <img class="product" src="./img/graphics/ram-geil-removebg-preview.png" alt="ram">
+                        </div>
+                        <div class="div-h2">
+                            <h2>Memoria GeiL DDR4 16GB 3000MHz Super Luce RGB Black</h2>
+                            <div>
+                                <p>$18.999</p>
+                            </div>
+                        </div>
                     </div>
                 </article>
                 <article>
-                    <div class="div-img">
-                        <img src="./img/graphics/silla-gamer-200-removebg-preview.png" alt="silla">
+                    <div class="product-container">
+                        <div class="div-img">
+                            <img class="product" src="./img/graphics/ryzen-5-200-removebg-preview.png" alt="ryzen">
+                        </div>
+                        <div class="div-h2">
+                            <h2>Procesador AMD Ryzen 5 1600 AF Zen</h2>
+                            <div>
+                                <p>$27.999</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="div-h2">
-                        <h2>Silla Gamer Cooler Master Caliber R2C Grey</h2>
+                </article>
+                <article>
+                    <div class="product-container">
+                        <div class="div-img">
+                            <img class="product" src="./img/graphics/silla-gamer-200-removebg-preview.png" alt="">
+                        </div>
+                        <div class="div-h2">
+                            <h2>Silla gamer cool Gr Master Caliber R2C Grey</h2>
+                            <div>
+                                <p>23.999</p>
+                            </div>
+                        </div>
                     </div>
                 </article>
             </section>
         </main>
         <footer class="footerContainer">
-            <div>
-                <div class="container">
-                    <div class="row">
-                        <h3 class="col-sm-4 col-md-4 col-lg-4 col-xl-4">Seguinos en</h3>
-                        <h3 class="col-sm-4 col-md-4 col-lg-4 col-xl-4">Trabajá con nosotros</h3>
-                        <h3 class="col-sm-4 col-md-4 col-lg-4 col-xl-4">Ayuda</h3>
-                    </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                            <ul>
-                                <li><a href="#" class="fa fa-facebook"></a></li>
-                                <li><a href="#" class="fa fa-twitter"></a></li>
-                                <li><a href="#" class="fa fa-youtube"></a></li>
-                                <li><a href="#" class="fa fa-instagram"></a></li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                            <p class="p-footer">Lorem ipsum dolor sit amet.</p>
-                        </div>
-                        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                            <p class="p-footer">Lorem ipsum dolor sit amet.</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                        <h3>Seguinos en</h3>
+                        <div class="botones-redes">
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+                            <a href="#" class="fa fa-youtube"></a>
+                            <a href="#" class="fa fa-instagram"></a>
                         </div>
                     </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                        <h3>Trabaja con nosotros</h3>
+                        <p>Botón de arrepentimiento</p>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                        <h3>Ayuda</h3>
+                        <p>Si tenés sugerencias o comentarios</p>
+                        <div>
+                            <p>Contáctanos</p>
+                        </div>
+                    </div>                      
                 </div>
-            </div>            
+            </div>        
         </footer>
         <!-- BOOTSTRAP - JAVASCRIPT -->
         <!-- JavaScript Bundle with Popper -->

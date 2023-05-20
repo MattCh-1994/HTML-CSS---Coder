@@ -1,11 +1,11 @@
 .game {
-  width: 200px;
-  height: 300px;
+  width: 120px;
+  height: 150px;
 }
 
 .product {
-  width: 250px;
-  height: 250px;
+  width: 120px;
+  height: 120px;
 }
 
 * {
@@ -49,6 +49,21 @@ header .row form .barra {
   background-color: #ff9a00;
   color: #0e2130;
 }
+header .row form div {
+  margin-left: 10px;
+  background-color: #ff9a00;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 5px 10px 15px black;
+}
+header .row form div a {
+  text-decoration: none;
+  color: #0e2130;
+  font-size: 20px;
+}
 header nav {
   background-color: #ff9a00;
   border-radius: 10px;
@@ -75,137 +90,178 @@ main {
 main h1 {
   font-size: 25px;
   padding-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 30px;
+  margin-bottom: 10px;
   color: #ff9a00;
   text-shadow: 0 0 4px #ec0000;
   font-weight: bold;
   text-decoration: underline;
+  line-height: 1.5;
 }
+main .div-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+main .div-h2 {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main .div-h2 h2 {
+  width: 90%;
+  text-align: center;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  padding-top: 3px;
+  margin-bottom: 0;
+  margin-left: 0px;
+  height: 65px;
+  color: #0e2130;
+  text-shadow: 0 0 4px #ec0000;
+  font-weight: bold;
+  font-size: 15px;
+}
+main .div-h2 div p {
+  width: 120px;
+  height: 30px;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #0e2130;
+  color: #ff9a00;
+}
+
 @media screen and (min-width: 250px) {
-  main .productos-destacados {
+  .productos-destacados {
     display: grid;
     grid-template-columns: 1fr;
-    justify-content: space-evenly;
+    align-items: center;
     grid-row-gap: 20px;
   }
-  main .productos-destacados article {
-    border: 2px solid #ff9a00;
-  }
-  main .productos-destacados article .div-img {
+  .productos-destacados article {
     display: flex;
-    align-items: center;
     justify-content: center;
   }
-  main .productos-destacados article .div-h2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .productos-destacados article .product-container {
+    margin-top: 20px;
+    width: 300px;
+    height: 280px;
+    margin-bottom: 30px;
+    background-color: #ff9a00;
+    border-radius: 20px;
+    box-shadow: 5px 10px 15px black;
+    transition: all 400ms ease;
+    cursor: pointer;
   }
-  main .productos-destacados article .div-h2 h2 {
-    text-align: center;
-    line-height: 20px;
-    letter-spacing: 0.25px;
-    margin-bottom: 0;
-    margin-left: 0px;
-    height: 65px;
-    color: #ff9a00;
-    text-shadow: 0 0 4px #ec0000;
-    font-weight: bold;
+  .productos-destacados article .product-container:hover {
+    box-shadow: 10px 15px 20px black;
+    transform: translateY(-3%);
   }
 }
 @media screen and (min-width: 768px) {
-  main .productos-destacados {
+  .productos-destacados {
     display: grid;
     grid-template-columns: repeat(2, 5fr);
-    justify-content: space-evenly;
     grid-row-gap: 20px;
     grid-column-gap: 20px;
+    justify-content: space-evenly;
   }
-  main .productos-destacados article .div-h2 {
+  .productos-destacados article {
     display: flex;
-    align-items: center;
     justify-content: center;
   }
-  main .productos-destacados article .div-h2 h2 {
-    text-align: center;
-    line-height: 20px;
-    letter-spacing: 0.25px;
-    margin-bottom: 0;
-    margin-left: 0px;
-    height: 65px;
-    color: #ff9a00;
-    text-shadow: 0 0 4px #ec0000;
-    font-weight: bold;
-    font-size: 15px;
-    text-decoration: none;
+  .productos-destacados article .product-container {
+    margin-top: 20px;
+    width: 300px;
+    height: 280px;
+    margin-bottom: 30px;
+    background-color: #ff9a00;
+    border-radius: 20px;
+    box-shadow: 5px 10px 15px black;
+    transition: all 400ms ease;
+    cursor: pointer;
+  }
+  .productos-destacados article .product-container:hover {
+    box-shadow: 10px 15px 20px black;
+    transform: translateY(-3%);
   }
 }
 @media screen and (min-width: 992px) {
-  main .productos-destacados {
+  .productos-destacados {
     margin: 20px;
     display: grid;
     grid-template-columns: repeat(4, 5fr);
     grid-column-gap: 20px;
     justify-content: space-evenly;
   }
-  main .productos-destacados article .div-h2 {
+  .productos-destacados article {
     display: flex;
-    align-items: center;
     justify-content: center;
   }
-  main .productos-destacados article .div-h2 h2 {
-    text-align: center;
-    line-height: 20px;
-    letter-spacing: 0.25px;
-    padding-top: 3px;
-    margin-bottom: 0;
-    margin-left: 0px;
-    height: 65px;
-    color: #ff9a00;
-    text-shadow: 0 0 4px #ec0000;
-    font-weight: bold;
-    font-size: 15px;
+  .productos-destacados article .product-container {
+    margin-top: 20px;
+    width: 300px;
+    height: 280px;
+    margin-bottom: 30px;
+    background-color: #ff9a00;
+    border-radius: 20px;
+    box-shadow: 5px 10px 15px black;
+    transition: all 400ms ease;
+    cursor: pointer;
+  }
+  .productos-destacados article .product-container:hover {
+    box-shadow: 10px 15px 20px black;
+    transform: translateY(-3%);
   }
 }
-
 .footerContainer {
   background-color: #ff9a00;
 }
-.footerContainer div .container .row {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.footerContainer div .container .row h3 {
+.footerContainer h3 {
   text-align: center;
+  font-size: 25px;
   line-height: 1.5;
 }
-.footerContainer div .container .row div ul {
+.footerContainer div .botones-redes {
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  margin-right: 40px;
 }
-.footerContainer div .container .row div ul li {
-  list-style: none;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-.footerContainer div .container .row div ul li a {
-  padding: 0px 1git0px;
+.footerContainer div .botones-redes a {
   text-decoration: none;
-}
-.footerContainer .container .row div .p-footer {
-  color: #0e2130;
-  font-weight: bold;
   text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  margin: 10px 5px;
+  padding: 0px 5px;
+  height: 40px;
+  width: 40px;
+  background-color: #0e2130;
+  box-shadow: 2px 2px 5px black;
+  border-radius: 50%;
+  color: white;
+}
+.footerContainer div p {
+  text-align: center;
+  font-size: 20px;
+  border: 2px solid #0e2130;
+  border-radius: 20px;
+  background-color: #0e2130;
+  color: #ff9a00;
 }
 
 * {
   overflow-x: hidden;
 }
 
+main {
+  padding-bottom: 70px;
+}
 main div .ps4promo {
   width: 100%;
 }
@@ -222,7 +278,8 @@ main h1 {
 main .categorias {
   background-color: #ff9a00;
   height: 700px;
-  margin-left: 15px;
+  width: 300px;
+  margin-left: 40px;
   margin-right: 15px;
   border-radius: 10px;
   display: flex;
@@ -239,36 +296,83 @@ main .categorias article h2 {
   font-weight: bold;
   line-height: 1.5;
 }
-main section .container-xl div article .productos {
+main .container-xl div article {
+  display: flex;
+  justify-content: center;
+}
+main section div article .product-container {
+  margin-top: 20px;
+  width: 300px;
+  height: 280px;
+  margin-bottom: 30px;
+  background-color: #ff9a00;
+  border-radius: 20px;
+  box-shadow: 5px 10px 15px black;
+  transition: all 400ms ease;
+  cursor: pointer;
+}
+main section div article .product-container .div-h3 {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
 }
-main .container-xl div article {
-  margin-top: 20px;
-}
-main .productos .game-img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-main .productos .product-img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-main .productos .precio {
-  color: #ff9a00;
-  text-shadow: 0 0 4px #ec0000;
-  font-weight: bold;
-}
-main .productos h3 {
-  color: #ff9a00;
+main section div article .product-container .div-h3 h3 {
+  width: 90%;
+  text-align: center;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  padding-top: 20px;
+  margin-bottom: 0;
+  margin-left: 0px;
+  height: 65px;
+  color: #0e2130;
   text-shadow: 0 0 4px #ec0000;
   font-weight: bold;
   font-size: 15px;
+}
+main section div article .product-container .div-h3 .precio {
+  width: 120px;
+  height: 30px;
   text-align: center;
-  line-height: 1.5;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #0e2130;
+  color: #ff9a00;
+}
+main section div article .product-container .div-game-h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+main section div article .product-container .div-game-h3 h3 {
+  padding-top: 20px;
+  width: 90%;
+  text-align: center;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  height: 50px;
+  color: #0e2130;
+  text-shadow: 0 0 4px #ec0000;
+  font-weight: bold;
+  font-size: 15px;
+}
+main section div article .product-container .div-game-h3 .precio {
+  width: 120px;
+  height: 30px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #0e2130;
+  color: #ff9a00;
+}
+main section div article .product-container:hover {
+  box-shadow: 10px 15px 20px black;
+  transform: translateY(-3%);
 }
 
 /*# sourceMappingURL=estilos.css.map */

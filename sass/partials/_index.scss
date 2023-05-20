@@ -38,6 +38,21 @@ header{
                 background-color: #ff9a00;
                 color: #0e2130;
             }
+            div{
+                margin-left: 10px;
+                background-color: #ff9a00;
+                width: 30px;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                border-radius: 50%;
+                box-shadow: 5px 10px 15px black;
+                a{
+                    text-decoration: none;
+                    color: #0e2130;
+                    font-size: 20px;
+                }
+            }
         }
     }
     nav{
@@ -66,44 +81,80 @@ main{
     h1{
         font-size: 25px;
         padding-top: 20px;
-        margin-bottom: 20px;
-        margin-left: 30px;
+        margin-bottom: 10px;
         color: variables.$main-color;
         text-shadow: 0 0 4px variables.$text-shadow;
         font-weight: bold;
         text-decoration: underline;
+        line-height: 1.5;
+    }
+    .div-img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .div-h2{
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        h2{
+            width: 90%;
+            text-align: center;
+            line-height: 20px;
+            letter-spacing: .25px;
+            padding-top: 3px;
+            margin-bottom: 0;
+            margin-left: 0px;
+            height: 65px;
+            color: variables.$product-textcolor;
+            text-shadow: 0 0 4px variables.$text-shadow;
+            font-weight: bold;
+            font-size: 15px;
+            }
+            div{
+                p{
+                    width: 120px;
+                    height: 30px;
+                    text-align: center;
+                    border-radius: 10px;
+                    margin-top: 20px;
+                    font-size: 20px;
+                    font-weight: bold;
+                    background-color: #0e2130;
+                    color: #ff9a00;
+                }
+            }
+        }
     }
     // MOBILE FIRST //
     @media screen and (min-width: 250px){
         .productos-destacados{
             display: grid;
             grid-template-columns: 1fr;
-            justify-content: space-evenly;
+            align-items: center;
             grid-row-gap: 20px;
             article{
-                border: 2px solid #ff9a00;
-                .div-img{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                display: flex;
+                justify-content: center;
+                .product-container{
+                    margin-top: 20px;
+                    width: 300px;
+                    height: 280px;
+                    margin-bottom: 30px;
+                    background-color: variables.$product-backgcolor;
+                    border-radius: 20px;
+                    box-shadow: 5px 10px 15px black;
+                    transition: all 400ms ease;
+                    cursor: pointer;
                 }
-                .div-h2{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    h2{
-                        text-align: center;
-                        line-height: 20px;
-                        letter-spacing: .25px;
-                        margin-bottom: 0;
-                        margin-left: 0px;
-                        height: 65px;
-                        color: variables.$main-color;
-                        text-shadow: 0 0 4px variables.$text-shadow;
-                        font-weight: bold;
-                    }
+                .product-container:hover{
+                    box-shadow: 10px 15px 20px black;
+                    transform: translateY(-3%);
                 }
-            }
+            }            
         }
     }
     // VISTA TABLET //
@@ -111,27 +162,28 @@ main{
         .productos-destacados{
             display: grid;
             grid-template-columns: repeat(2, 5fr);
-            justify-content: space-evenly;
             grid-row-gap: 20px;
             grid-column-gap: 20px;
-            article .div-h2{
+            justify-content: space-evenly;
+            article{
                 display: flex;
-                align-items: center;
                 justify-content: center;
-                h2{
-                    text-align: center;
-                    line-height: 20px;
-                    letter-spacing: .25px;
-                    margin-bottom: 0;
-                    margin-left: 0px;
-                    height: 65px;
-                    color: variables.$main-color;
-                    text-shadow: 0 0 4px variables.$text-shadow;
-                    font-weight: bold;
-                    font-size: 15px;
-                    text-decoration: none;
+                .product-container{
+                    margin-top: 20px;
+                    width: 300px;
+                    height: 280px;
+                    margin-bottom: 30px;
+                    background-color: variables.$product-backgcolor;
+                    border-radius: 20px;
+                    box-shadow: 5px 10px 15px black;
+                    transition: all 400ms ease;
+                    cursor: pointer;
                 }
-            }
+                .product-container:hover{
+                    box-shadow: 10px 15px 20px black;
+                    transform: translateY(-3%);
+                }
+            }          
         }
     }
     // VISTA DESKTOP //
@@ -142,57 +194,60 @@ main{
             grid-template-columns: repeat(4, 5fr);
             grid-column-gap: 20px;
             justify-content: space-evenly;
-            article .div-h2{
+            article{
                 display: flex;
-                align-items: center;
                 justify-content: center;
-                h2{
-                    text-align: center;
-                    line-height: 20px;
-                    letter-spacing: .25px;
-                    padding-top: 3px;
-                    margin-bottom: 0;
-                    margin-left: 0px;
-                    height: 65px;
-                    color: variables.$main-color;
-                    text-shadow: 0 0 4px variables.$text-shadow;
-                    font-weight: bold;
-                    font-size: 15px;
+                .product-container{
+                    margin-top: 20px;
+                    width: 300px;
+                    height: 280px;
+                    margin-bottom: 30px;
+                    background-color: variables.$product-backgcolor;
+                    border-radius: 20px;
+                    box-shadow: 5px 10px 15px black;
+                    transition: all 400ms ease;
+                    cursor: pointer;
                 }
-            }
+                .product-container:hover{
+                    box-shadow: 10px 15px 20px black;
+                    transform: translateY(-3%);
+                }
+            }          
         }
     }
-}
 
 .footerContainer{
     background-color: #ff9a00;
-    div .container .row{
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        h3{
-            text-align: center;
-            line-height: 1.5;
-        }
-    }
-    div .container .row div ul{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-right: 40px;
-        li{
-            list-style: none;
-            padding-left: 10px;
-            padding-right: 10px;
-            a{
-                padding: 0px 1git0px;
-                text-decoration: none;
-            }
-        }
-    }
-    .container .row div .p-footer{
-        color: #0e2130;
-        font-weight: bold;
+    h3{
         text-align: center;
+        font-size: 25px;
+        line-height: 1.5;
+    }
+    div .botones-redes{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        a{
+            text-decoration: none;
+            text-align: center;
+            line-height: 40px;
+            font-size: 20px;
+            margin: 10px 5px;
+            padding: 0px 5px;
+            height: 40px;
+            width: 40px;
+            background-color: #0e2130;
+            box-shadow: 2px 2px 5px black;
+            border-radius: 50%;
+            color: white
+        }
+    }
+    div p{
+        text-align: center;
+        font-size: 20px;
+        border: 2px solid #0e2130;
+        border-radius: 20px;
+        background-color: #0e2130;
+        color: #ff9a00;
     }
 }
